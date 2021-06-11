@@ -1,0 +1,862 @@
+
+/*============GLOBAL============*/
+/*============GLOBAL============*/
+/*============GLOBAL============*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  } 
+
+body {
+    color: #ffffff;
+    background-color: #000000;
+    position: relative;
+    font-family: 'Poppins';
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.backgroundBlue {
+    background-color: #8ED1E7;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 70px; 
+}
+
+
+h4 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: 400; 
+}
+
+
+.buttons {
+    background-color: #8ED1E7;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 18px 8px 18px;
+    border-style: none;
+    border-radius: 7px;
+    transition: 0.1s;
+}
+
+.buttons:hover{
+    background-color: #6e95a1;
+}
+
+.buttonSubmit {
+    background-color: #8ED1E7;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 18px 8px 18px;
+    border-style: none;
+    border-radius: 7px;
+    transition: 0.1s;
+}
+
+.buttonSubmit:hover{
+    background-color: #6496a7;
+    transform: scale(1.1);
+}
+
+
+.button-style-black{
+    margin: 0 5px 0 5px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+	width: 100px;
+	background-color:rgb(0, 0, 0);
+	border: none;
+	color: #ffffff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+    border-radius: 7px;
+    transition: 0.1s;
+}
+
+.button-style-black:hover{
+    background-color:rgb(54, 54, 54);
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+a:visited {
+    font-weight: 700;
+}
+
+a.active{
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+
+.breadcrumb-box{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.breadcrumbs{
+    padding: 10px;
+}
+
+.breadcrumb-item{
+    display: inline-block;
+}
+
+.breadcrumb-item:not(:last-of-type)::after{
+    content: '>';
+    margin: 0 3px;
+}
+
+/*============STARTPAGE============*/
+/*============STARTPAGE============*/
+/*============STARTPAGE============*/
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: none;
+    z-index: 1;
+    padding-top: 65px;
+    margin-top:30px;
+    width: 100%;
+
+}
+
+.startTextDiv {
+    z-index: 1;
+}
+
+.placeholderImage {
+    height: 350px;
+    width: 500px;
+    background-color: #f3f3f3;
+    margin-right: 15px;
+}
+
+.placeholderText {
+    text-align: center;
+    padding-top: 50px;
+    color: #cecece;
+}
+
+.startText {
+   padding-top: 0px; 
+   margin-top: 0px;
+   font-size: 77px;
+   line-height: 1.2em;
+   text-align: right;
+
+}
+
+.second {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.startsearchDiv {
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchBar {
+    background-color: #ffffff;
+    border-style: none;
+    font-size: 22px;
+    font-family: 'Poppins';
+    border-radius: 7px;
+    margin-right: 5px;
+    padding: 7px 3px 7px 3px;
+    width: 600px;
+}
+
+
+.title {
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 3px;
+    top: 7px;
+    left: 2%;
+
+}
+
+.third {
+    margin-top: 110px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.space {
+    height: 160px;
+}
+
+.placeholderImage {
+    transform: rotate(10deg);
+
+}
+
+.trendingTextDiv {
+    padding-top: 65px;
+    margin-left: 90px;
+    text-justify: left;
+
+}
+
+.trendingPlaylistDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+}
+
+
+.backgroundDivBlue {
+    width: 100%;
+    height: 200px;
+    margin-top: 200px;
+    background-color: #8ED1E7;
+}
+
+.backgroundDivBlue2 {
+    width: 70%;
+    position: absolute;
+    top: 200px;
+    z-index: 0;
+    height: 230px;
+    background-color: #8ED1E7;
+    transform: rotate(-15deg);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    width: 90%;
+}
+
+/*============FEED============*/
+/*============FEED============*/
+/*============FEED============*/
+
+
+.feedContent {
+    height: 250px;
+    width: 250px;
+    background-color: #f3f3f3;
+    margin: 15px;
+}
+
+
+/*============MAIN MENU============*/
+/*============MAIN MENU============*/
+/*============MAIN MENU============*/
+
+.menuButton {
+    padding-left: 25px;
+}
+
+.topMenu {
+    background-color: #000000;
+    height: 65px;
+}
+
+.menuTitle {
+    font-size: 13px;
+}
+
+#mainMenu {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+
+/*============PLAYLISTS============*/
+/*============PLAYLISTS============*/
+/*============PLAYLISTS============*/
+
+
+.playlistDiv {
+    height: 190px;
+    width: 190px;
+    background-color: #f3f3f3;
+    margin: 20px;
+}
+
+.specificPlaylistTitle {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+
+.specificPlaylistUsername {
+    text-align: center;
+    margin-top: -10px;
+    padding-top: 0px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+
+.tablePlaylist {
+    padding-top: 20px;
+    width: 98%;
+    margin: 1%;
+}
+
+.playlist-search-input{
+    width: 200px;
+	margin: 0px 20px 0 5px;
+    padding: 10px 10px;
+    font-family: 'Poppins', 'sans serif';
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    filter: drop-shadow(0px 0px 3px rgb(129, 129, 129));
+}
+
+
+
+/*============BBBBBBBB - PLAYLISTS============*/
+/*============BBBBBBBB - PLAYLISTS============*/
+/*============BBBBBBBB - PLAYLISTS============*/
+
+.tableBrowsePlaylist {
+    margin-top: 5px;
+    height: 400px;
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    left: 100px;
+    overflow: auto;
+    filter: drop-shadow(0 0 3px #000);
+}
+
+.removeSongButton{
+    border-style: none;
+    background-color: #4d4d4d;
+    font-family: 'Poppins', 'sans serif';
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 px rgb(143, 143, 143));
+    transition: 0.1s;
+}
+
+.removeSongButton:hover{
+    background-color: #5a8c9c;
+    transform: scale(1.09);
+}
+
+
+
+
+/*============CREATING PLAYLIST============*/
+/*============CREATING PLAYLIST=============*/
+/*============CREATING PLAYLIST=============*/
+
+.addTrack {
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-weight: 100;
+    background-color: transparent;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 5px;
+
+}
+
+/*============TABLE============*/
+/*============TABLE============*/
+/*============TABLE============*/
+
+.tablePlaylist {
+    margin-top: 5px;
+    height: 250px;
+    overflow: overlay;
+
+}
+
+table {
+    text-align:center;
+    font-family: 'Poppins';
+    font-weight: 200; 
+    font-size: 14px;
+    margin-left:auto; 
+    margin-right:auto; 
+    width:70%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 11px 11px 16px 13px;
+    text-align: left;
+  }
+
+tr:nth-child(even) {background-color: #5f5f5f;}
+tr:nth-child(odd) {background-color: #000000;}
+
+th {
+    background-color: #000000;
+    font-size: 15px;
+}
+
+.createTableTitles {
+    background-color: #A0A0A0;
+}
+
+.createTableRow:nth-child(even) {background-color: #b9b9b9;}
+.createTableRow:nth-child(odd) {background-color: #A0A0A0;}
+
+
+
+.startplaylistName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*============CREATING PLAYLIST============*/
+/*============CREATING PLAYLIST============*/
+/*============CREATING PLAYLIST============*/
+
+.searchBar2 {
+    background-color: #000000;
+    border-style: solid;
+    outline: 0;
+    border-color: #8ED1E7;
+    border-width: 0 0 2px;
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #ffffff;
+    border-radius: 0px;
+    padding: 7px 3px 7px 3px;
+    width: 600px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.searchBar2:focus {
+    border-color: #ffffff;
+}
+
+.label-fileUpload{
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 700;
+
+}
+
+.fileUpload{
+    margin: 20px 0 70px 0;
+    width: 200px;
+    background-color: #8ED1E7;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 18px 8px 18px;
+    border-style: none;
+    border-radius: 7px;
+
+}
+
+.createPlaylistSearch {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.wrongmessagebox{  
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wrongmessage{
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+/*============PICKLIST============*/
+/*============PICKLIST============*/
+/*============PICKLIST============*/
+
+.displayGenres {
+    display: none;
+}
+
+.picklistDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButtonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picklistTitle {
+    font-size: 14px;
+}
+
+.picklistButton {
+    margin-left: 9px;
+    margin-top: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px 6px 16px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: 0.2;
+}
+
+.picklistButton:hover {
+    background-color:#bce5f3;
+}
+
+.picklistButton:active {
+    background-color:#f7f7f7;
+    transform: scale(0.9);
+}
+
+
+.picklistButtons {
+    max-width: 450px;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+
+/*============LOGIN============*/
+/*============LOGIN============*/
+/*============LOGIN============*/
+
+#login-container{
+	width: auto;
+	height: auto;
+	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	border-radius: 10px;
+}
+
+#login-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px 0 0 0;
+}
+
+#login-box label{
+	margin: 10px 0px 15px 10px;
+	color: #ffffff;
+}
+
+#login-box input{
+	width: 320px;
+	margin: 0px 5px 0 5px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 3px rgb(129, 129, 129));
+}
+
+::placeholder{
+    font-size: 15px;
+    color: #c4c4c4;
+}
+
+#login-box-button{
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+
+
+#sign-up-box{
+    width: auto;
+	margin: auto;
+    margin-top: 60px;
+    margin-bottom: 0px;
+	text-align: center;
+}
+
+#sign-up-text{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+	margin: 0 0 10px 0;
+	font-size: 30px;
+}
+
+#wrongUser{
+    position: absolute;
+    top: 470px;
+    left: 540px;
+}
+
+
+
+/*============PROFILE============*/
+/*============PROFILE============*/
+/*============PROFILE============*/
+
+#profile-box{
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#profile-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile-content{
+    width: 200px;
+    height: 200px;
+    margin: 0 25px 0 25px;
+    display: flex;
+    background-color: #8ED1E7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    filter: drop-shadow(0 0 3px #fff);
+    transition: transform 0.2s;
+}
+
+.profile-content:hover{
+    transform: scale(1.2);
+    background-color: #6fa8bb;
+}
+
+.profile-content-icon{
+  transform: scale(3);
+  margin: 30px 0 20px 0;
+  color: #fff;
+}
+
+.profile-content-title{
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans serif';
+    font-weight: 700;
+}
+
+#playlist-search-box{
+    width: auto;
+	margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+	text-align: center;
+}
+
+.playlist-search-label{
+    font-family: 'Poppins', 'sans serif';
+}
+
+
+.playlists-result{
+    width: 930px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.playlist{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 0 25px 40px 25px;
+    transition: transform 0.2s;
+    filter: drop-shadow(0px 0px 3px #000);
+    border: solid 5px #000;
+}
+
+.playlist:hover{
+    transform: scale(1.1);
+}
+
+.playlist-img img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.myplaylist{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 0 25px 40px 25px;
+    transition: transform 0.2s;
+    filter: drop-shadow(0px 0px 3px #000);
+    border: solid 5px #8ED1E7;
+}
+
+.myplaylist:hover{
+    transform: scale(1.1);
+}
+
+.myplaylist-img img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.playlist-info{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Poppins", "sans serif";
+    font-weight: 300;
+    z-index: 2;
+}
+
+.playlist-name{
+    margin: 10px 0 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.playlist-username{
+    margin: 0 0 0 10px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.logout-button-box{
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/*============LIKED PLAYLISTS============*/
+/*============LIKED PLAYLISTS============*/
+/*============LIKED PLAYLISTS============*/
+
+.playlist-info-blue{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #8ED1E7;
+    color: #fff;
+    font-family: "Poppins", "sans serif";
+    font-weight: 300;
+    z-index: 2;
+}
+
+/*============FOOTER============*/
+/*============FOOTER============*/
+/*============FOOTER============*/
+
+#backgroundFooter {
+    background-color: #ffffff;
+    height: 40px;
+    padding-top: 15px;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footerNav {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
